@@ -236,7 +236,80 @@ h1,h2,h3,h4,h5,p,ul {
         margin-top: 27px;
     }
      /*About end*/
+     .pets {
+        background: var(--color-light-l);
+        max-height: 877px;
+        padding: 80px 40px 100px 40px
+     }
+     .pets_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .heading_our_friends {
+        max-width: 400px;
+        text-align: center;
+     }
+    .slider {
+        display: flex;
+        margin-bottom: 60px;
+        margin-top: 60px;
+     }
+     .card_Katrine, .card_Jennifer, .card_Woody  {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-light-s);
+     }
+     .card_Jennifer {
+        margin-left: 90px;
+        margin-right: 90px;
+     }
+    .arrow_left_button, .arrow_right_button {
+        max-width: 52px;
+        max-height: 52px;
+        border: 2px solid var(--color-primary);
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 23px 19px;
+        margin: 192px 53px 192px 0px;
 
+    }
+    .arrow_right_button {
+        margin: 192px 0px 192px 53px;
+    }
+    .pets_name {
+        font-family: "Georgia Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--color-dark-l);
+        margin-top: 19px;
+        margin-bottom: 30px;
+    }
+    .Our_pets_button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 13px 42px;
+        gap: 10px;
+        border: 2px solid var(--color-primary);
+        border-radius: 100px;
+        font-family: "Georgia Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: var(--color-dark-3xl);
+        letter-spacing: 0.06em;
+        margin: 0px 41.5px 30px 41.5px;
+        background-color: var(--color-light-s)
+
+    }
 
 
 
