@@ -39,7 +39,6 @@ body {
 h2 {
     font-size: 44px;
     line-height: 130%;
-    font-family: "Georgia Regular";
    }
 h3 {
     font-size: 35px;
@@ -79,6 +78,7 @@ h1,h2,h3,h4,h5,p,ul {
     background-repeat: no-repeat;
     /*max-height: 908px;*/
     padding: 62px 38px 0px 40px;
+    margin-bottom: 0px;
 }
 
 /* header-start*/
@@ -192,7 +192,7 @@ h1,h2,h3,h4,h5,p,ul {
 }
 .content {
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .start-screen_content {
     max-width: 460px;
@@ -207,31 +207,35 @@ h1,h2,h3,h4,h5,p,ul {
     margin-left: 42px;
 }
     /* start-screen-content end*/
-    /* About start
+    /* About start*/
     .about {
-        min-height: 588px;
-        margin: 0 auto;
+        max-height: 588px;
         background: var(--color-light-xl);
+        padding: 80px 40px 100px 40px ;
         }
     .wrapper_about {
-        margin: 80px 40px 100px 40px;
         display: flex;
-        justify-content:center;
+        justify-content: space-between;
     }
     .about_pets {
-        margin: 0px 120px 0px 175px;
+        margin: -4px 120px 0px 175px;
         color: var(--color-dark-l);
     }
     .about_content {
+        margin-right: 175px;
         max-width: 430px;
         max-height: 380px;
+    }
+    .about_content h3{
+     max-width: 370px;
     }
     .subheading_about {
         font-size: 15px;
         line-height: 160%;
         color: var(--color-dark-xl);
+        margin-top: 27px;
     }
-     About end*/
+     /*About end*/
 
 
 
