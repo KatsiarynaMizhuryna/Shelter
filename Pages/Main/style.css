@@ -308,7 +308,20 @@ h1,h2,h3,h4,h5,p,ul {
         letter-spacing: 0.06em;
         margin: 0px 41.5px 30px 41.5px;
         background-color: var(--color-light-s)
+    }
 
+.Get_to_know_button {
+        background-color: var(--color-primary);
+        border: none;
+        border-radius: 100px;
+        padding: 15px 45px;
+        color: var(--color-dark-3xl);
+        font-family: "Georgia Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
     }
 
 
