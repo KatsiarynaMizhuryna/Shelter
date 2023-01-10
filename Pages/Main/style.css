@@ -341,6 +341,7 @@ p {
   .help {
     background-color: var(--color-light-xl);
     padding: 80px 0px 100px 0px;
+    height: 611px;
   }
   .help__content
   {
