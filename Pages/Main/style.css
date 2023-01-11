@@ -471,7 +471,7 @@ p {
 /*Section Donation end*/
 /*Footer start*/
 .footer {
-    height: 350px;
+    max-height: 350px;
     background-image: url(../../Assets/Images/footer-gradient-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -482,20 +482,7 @@ p {
     justify-content: space-between;
     column-gap: 160px;
 }
-.contacts, .locations {
-    display: flex;
-    flex-direction: column;
-    padding-top: 16px;
-    margin-bottom: 60px;
-    row-gap: 40px;
-}
-.contacts h3 {
-    color: var(--color-light-xl);
-    width: 278px;
-    height: 90px;
-    letter-spacing: 0.05em;
-}
-.mail {
+.footer-content a {
     display: flex;
     align-items: center;
     font-family: "Georgia Regular";
@@ -503,12 +490,33 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
-    letter-spacing: 0.06em;
     color: var(--color-primary);
+    text-decoration: none;
+}
+.contacts, .locations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    margin-bottom: 60px;
+}
+.contacts {
+    row-gap: 40px;
+}
+.locations {
+    row-gap: 34px;
+}
+.contacts h3 {
+    color: var(--color-light-xl);
+    width: 278px;
+    height: 90px;
+    letter-spacing: 0.05em;
+}
+
+.mail {
     width: 251px;
     height: 32px;
+    letter-spacing: 0.06em;
     gap: 20px;
-    text-decoration: none;
 }
 .mail::before {
     content: "";
@@ -518,19 +526,10 @@ p {
     background-repeat: no-repeat;
 }
 .phone {
-    display: flex;
-    align-items: center;
-    font-family: "Georgia Regular";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 115%;
     letter-spacing: 0.05em;
-    color: var(--color-primary);
     width: 239px;
     height: 32px;
     gap: 20px;
-    text-decoration: none;
 }
 .phone::before {
     content: "";
@@ -539,7 +538,39 @@ p {
     background-image: url(../../Assets/Icons/icon-phone.svg);
     background-repeat: no-repeat;
 }
+.locations h3 {
+    color: var(--color-light-xl);
+    width: 270px;
+    height: 90px;
+    letter-spacing: 0.05em;
+}
+.boston {
+    width: 302px;
+    height: 46px;
+    letter-spacing: 0.06em;
+    gap: 20px;
+}
+.boston::before {
+    content: "";
+    min-width: 22px;
+    height: 32px;
+    background-image: url(../../Assets/Icons/icon-marker.svg);
+}
+.london {
+    min-width: 302px;
+    height: 32px;
+    letter-spacing: 0.05em;
+    gap: 20px;
 
+}
+.london::before {
+    content: "";
+    width: 22px;
+    height: 32px;
+    background-image: url(../../Assets/Icons/icon-marker\ \(1\).svg);
+    background-repeat: no-repeat;
+}
+/*Footer end*/
 
 
 
