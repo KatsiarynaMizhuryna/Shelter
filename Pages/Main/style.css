@@ -349,6 +349,7 @@ p {
     padding-right: 87px;
     display: flex;
     flex-direction: column;
+    height: 431px;
   }
   .help__heading {
     max-width: 310px;
@@ -359,7 +360,6 @@ p {
   }
 .help__list {
     width: 1026px;
-    height: 113px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
