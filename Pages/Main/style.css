@@ -179,6 +179,9 @@ p {
     text-align: justify;
 }
 .button_primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 207px;
     height: 52px;
     background: var(--color-primary);
@@ -190,7 +193,13 @@ p {
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
-    letter-spacing: 0.06em
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--color-dark-3xl)
+}
+.button_primary:hover {
+    background-color: var(--color-primary-light);
+    transition-duration: 0.4s;
 }
 .content {
     display: flex;
@@ -270,6 +279,10 @@ p {
         flex-direction: column;
         background-color: var(--color-light-s);
      }
+     .card_Katrine:hover, .card_Jennifer:hover, .card_Woody:hover {
+        background-color: var(--color-dark-s);
+        cursor: pointer;
+     }
      .card_Jennifer {
         margin-left: 90px;
         margin-right: 90px;
@@ -284,11 +297,14 @@ p {
         align-items: center;
         padding: 20px 19px;
         margin: 192px 53px 192px 0px;
-
     }
     .arrow_right_button {
         margin: 192px 0px 192px 53px;
     }
+    .arrow_left_button:hover, .arrow_right_button:hover, .Our_pets_button:hover{
+        background-color: var(--color-primary);
+    }
+
     .pets_name {
         font-family: "Georgia Regular";
         font-style: normal;
