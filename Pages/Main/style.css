@@ -77,7 +77,7 @@ p {
 
 
 .start-screen {
-    background-image: url(/Assets/Images//main page/start-screen-gradient-background\ \(1\).png);
+    background-image: url(../../Assets/Images/main_page/start-screen-gradient-background\ \(1\).png);
     background-size:cover;
     background-repeat: no-repeat;
     max-height: 908px;
@@ -489,7 +489,7 @@ p {
 /*Footer start*/
 .footer {
     max-height: 350px;
-    background-image: url(../../Assets/Images/footer-gradient-background.png);
+    background-image: url(../../Assets/Images/main_page/footer-gradient-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 40px;
