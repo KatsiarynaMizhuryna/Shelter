@@ -283,6 +283,10 @@ p {
         background-color: var(--color-dark-s);
         cursor: pointer;
      }
+     .card_Katrine:hover button, .card_Jennifer:hover button, .card_Woody:hover button {
+        cursor: pointer;
+        background-color: var(--color-primary);
+     }
      .card_Jennifer {
         margin-left: 90px;
         margin-right: 90px;
@@ -301,7 +305,7 @@ p {
     .arrow_right_button {
         margin: 192px 0px 192px 53px;
     }
-    .arrow_left_button:hover, .arrow_right_button:hover, .Our_pets_button:hover{
+    .arrow_left_button:hover, .arrow_right_button:hover{
         background-color: var(--color-primary);
     }
 
@@ -335,7 +339,6 @@ p {
         margin: 0px 41.5px 30px 41.5px;
         background-color: var(--color-light-s)
     }
-
 .Get_to_know_button {
         background-color: var(--color-primary);
         border: none;
