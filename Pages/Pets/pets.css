@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Georgia bold';
+    src: url(/assets/Fonts/Georgia\ Bold\ Italic\ font.ttf);
+    font-style:normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Georgia Regular";
+    src: url(/Assets/Fonts/Georgia\ Regular\ font.ttf);
+    font-style: normal;
+    font-weight: 400;
+    }
+
+@font-face {
+    font-family: 'Arial';
+    src: url(/assets/Fonts/Arial-BoldMT.ttf);
+    src: url(/assets/Fonts/Arial-ItalicMT.ttf);
+    src: url(/assets/Fonts/ArialMT.ttf);
+    src: url(/assets/Fonts/ArialMT\ \(1\).ttf);
+}
+:root {
+    --color-light-xl:#FFFFFF;
+    --color-light-l:#F6F6F6;
+    --color-light-s:#FAFAFA;
+    --color-dark-s:#CDCDCD;
+    --color-dark-m:#B2B2B2;
+    --color-dark-l:#545454;
+    --color-dark-xl:#4C4C4C;
+    --color-dark-2xl:#444444;
+    --color-dark-3xl:#292929;
+    --color-primary:#F1CDB3;
+    --color-primary-light:#FDDCC4;
+}
+ h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--color-dark-l);
+}
+li {list-style: none;
+}
+body {
+    font-family: "Georgia Regular";
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-dark-l);
+}
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*Header start*/
+.header-container {
+    height: 120px;
+    background-color: var(--color-light-xl);
+}
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom:30px ;
+    height: 60px;
+}
+.logo {
+    width: 184px;
+    height: 60px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo h1 {
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+.logo p {
+    color: var(--color-dark-3xl);
+    font-family: 'Arial';
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.nav__menu {
+    display: flex;
+    margin-top: 13px;
+    margin-bottom: 17px;
+}
+.navigation-link {
+    margin-right: 36px;
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 160%;
+}
+.navigation-link:last-child {
+    margin-right: 0px;
+}
+.header-link:hover {
+    border-bottom:3px solid var(--color-primary);
+}
+.active-link {
+    color: var(--color-dark-3xl);
+    border-bottom:3px solid var(--color-primary);
+}
+/*Header end*/
+/*Pets start*/
+
+
+
