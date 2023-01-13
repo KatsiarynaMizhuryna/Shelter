@@ -281,6 +281,7 @@ p {
         display: flex;
         flex-direction: column;
         background-color: var(--color-light-s);
+        border-radius: 9px;
      }
      .card_Katrine:hover, .card_Jennifer:hover, .card_Woody:hover {
         background-color: var(--color-dark-s);
