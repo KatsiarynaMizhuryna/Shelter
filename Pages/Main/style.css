@@ -284,7 +284,7 @@ p {
         border-radius: 9px;
      }
      .card_Katrine:hover, .card_Jennifer:hover, .card_Woody:hover {
-        background-color: var(--color-dark-s);
+        background-color: var(--color-light-xl);
         cursor: pointer;
      }
      .card_Katrine:hover button, .card_Jennifer:hover button, .card_Woody:hover button {

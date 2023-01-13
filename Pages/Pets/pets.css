@@ -141,6 +141,14 @@ body {
     height: 435px;
     background-color: var(--color-light-s);
 }
+.card:hover {
+    background-color: var(--color-light-xl);
+    cursor: pointer;
+}
+.card:hover button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
 .pets_name {
     font-weight: 400;
     font-size: 20px;
