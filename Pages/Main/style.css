@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: "Georgia Regular";
-    src: url(/Assets/Fonts/Georgia\ Regular\ font.ttf);
+    src: url(/Assets/Fonts/Georgia\ Regular.ttf);
     font-style: normal;
     font-weight: 400;
     }
@@ -30,6 +30,7 @@
     --color-dark-3xl:#292929;
     --color-primary:#F1CDB3;
     --color-primary-light:#FDDCC4;
+    --color-black: #000;
    }
 body {
     font-family: "Georgia Regular";
