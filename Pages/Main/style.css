@@ -69,7 +69,7 @@ p {
 }
 
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -80,12 +80,11 @@ p {
     background-image: url(../../Assets/Images/main_page/start-screen-gradient-background\ \(1\).png);
     background-size:cover;
     background-repeat: no-repeat;
-    max-height: 908px;
+    min-height: 908px;
     padding: 62px 38px 0px 40px;
     margin-bottom: 0px;
 }
 
-/* header-start*/
 .header {
     margin-bottom: 60px;
     }
@@ -94,7 +93,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*margin-bottom: 60px;*/
     }
 .logo {
     max-width: 184px;
@@ -162,15 +160,11 @@ p {
     border-bottom: 3px solid;
     border-bottom-color: var(--color-primary);
 }
-
-
 /* header-end*/
 
  /* start-screen-content start*/
 .heading {
-    max-width: 310px ;
-    padding-top: 129.45px;
-    margin-bottom: 42px;
+    max-width: 310px;
     color: var(--color-light-xl);
 }
 .subheading {
@@ -210,17 +204,13 @@ p {
 }
 .content .wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 .start-screen_content {
     max-width: 460px;
-    padding-top: 28px;
-    padding-bottom: 243px;
 }
 .start-screen_puppy {
-    width: 698px;
-    height: 724px;
-    left: calc(50% - 698px/2 + 251px);
-    bottom: 0px;
+    display: flex;
     margin-left: 42px;
     overflow: hidden;
 }
@@ -229,7 +219,7 @@ p {
     /* About start*/
     .about {
         background: var(--color-light-xl);
-        padding: 80px 40px 100px 40px ;
+        padding: 77px 40px 100px 40px ;
         }
     .wrapper_about {
         display: flex;
@@ -365,14 +355,14 @@ p {
   .help {
     background-color: var(--color-light-xl);
     padding: 80px 0px 100px 0px;
-    height: 611px;
+    min-height: 611px;
   }
   .help__content {
     padding-left: 87px;
     padding-right: 87px;
     display: flex;
     flex-direction: column;
-    height: 431px;
+    min-height: 431px;
   }
   .help__heading {
     max-width: 310px;
@@ -382,7 +372,7 @@ p {
     margin-bottom: 60px;
   }
 .help__list {
-    width: 1026px;
+    max-width: 1026px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -435,8 +425,8 @@ p {
 /* Help end*/
 /*Section Donation start*/
 .donation {
-    height: 462px;
-    padding: 80px 0px 100px 0px;
+    min-height: 462px;
+    padding: 78px 0px 100px 0px;
     background-color: var(--color-light-l);
 }
 .donation__content {
@@ -499,7 +489,7 @@ p {
 /*Section Donation end*/
 /*Footer start*/
 .footer {
-    max-height: 350px;
+    min-height: 350px;
     background-image: url(../../Assets/Images/main_page/footer-gradient-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -508,6 +498,9 @@ p {
 .footer-content {
     display: flex;
     justify-content: space-between;
+}
+.footer-info {
+    display: flex;
     column-gap: 160px;
 }
 .footer-content a {
@@ -598,8 +591,123 @@ p {
     background-repeat: no-repeat;
 }
 /*Footer end*/
+@media (min-width: 1280px) {
+    .heading {
+        margin:159px 0px 42px 0px;
+    }
+}
+@media ((max-width: 1279px) and (min-width: 768px)) {
+    .wrapper {
+        max-width: 708px;
+        margin: auto;
+    }
+    .start-screen {
+        padding: 31px 30px 0px 31px;
+    }
+    .start-screen_content{
+        margin:0 auto;
+    }
+    .heading {
+        margin-bottom: 38px;
+        }
+    .button_primary {
+        margin-left: 125px;
+    }
+    .start-screen_puppy {
+        padding: 100px 0px 0px 95px;
+    }
+    .start-screen_puppy img{
+        align-self: flex-end;
+        width: 569px
+    }
+    .wrapper_about {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 127px 0px 129px
+    }
+    .about_content {
+        margin: 0px 0px 81px 0px ;
+    }
+    .about_pets {
+        padding: 0px 0px 0px 65px;
+    }
+    .slider {
 
+    }
+    .card_Woody {
+        display: none;
+    }
+    .card_Katrine {
 
+    }
+    .card_Jennifer {
+
+    }
+    .help__content {
+        padding: 0px;
+    }
+    .help__list {
+    row-gap: 55px;
+    column-gap: 60px;
+    }
+    .help__list_item {
+        margin: 0px;
+        width: 170px;
+    }
+    .help__list_item.food {
+        padding-left: 79px;
+    }
+    .help__list_item.toys {
+        padding-right: 77px;
+    }
+    .help__list_item.bowls {
+        margin-left: 39px;
+    }
+    .help__list_item.shampoos {
+        padding-right: 38px;
+    }
+    .help__list_item.medicines {
+        margin-left: 39px;
+    }
+    .help__list_item.sleeping {
+        margin-right: 38px;
+    }
+    .help__list_item.vitamins {
+        padding-right: 77px;
+    }
+    .donation {
+        padding: 81px 0px 90px 44px;
+    }
+    .donation__content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px 44px 0px 0px;
+    }
+    .donation_dog {
+        margin-top: 59px;
+        padding-left: 14px;
+    }
+    .footer {
+        padding-top: 15px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-info {
+      column-gap: 61px;
+    }
+    .contacts {
+        padding: 15px 0px 0px 35px;
+}
+    .footer-puppy {
+        display: flex;
+        align-self: center;
+    }
+}
+   
 
 
 
