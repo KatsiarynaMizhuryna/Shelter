@@ -76,11 +76,11 @@
     font-size: 15px;
     line-height: 110%;
 }
-.popup-close-button {
+.popup-btn {
     left: 890px;
     top: 0px;
 }
-.popup-close-button button {
+.popup-close-button {
     width: 52px;
     height: 52px;
     border: 2px solid var(--color-primary);
@@ -88,10 +88,13 @@
     background-color: transparent;
     padding: 4px 0px 0px 0px;
 }
-.popup-close-button button:hover {
+.popup-close-button:hover {
     background-color: var(--color-primary)
 }
 .vector {
     width: 12px;
     height: 12px;
+}
+.lock {
+    overflow: hidden;
 }

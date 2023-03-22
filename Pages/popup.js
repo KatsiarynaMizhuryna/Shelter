@@ -8,7 +8,6 @@ if (popupButtons.length > 0) {
     popupButtons[index].addEventListener("click", (event) => {
       popup.classList.add("popup-open");
       createPopup(event);
-      // event.preventDefault();
     });
   }
 }
@@ -33,11 +32,24 @@ function createPopup(e) {
             </ul>
         </div>
         </div>
-        <div class="popup-close-button"><button><img class = "vector" src="/Assets/Icons/Vector.png" alt=""></button></div>
+        <div class="popup-btn"><button class="popup-close-button"><img class = "vector" src="/Assets/Icons/Vector.png" alt=""></button></div>
         </div>`
     ;
+    paddingOffset = window.innerWidth - body.offsetWidth + "px";
+        body.style.paddingRight = paddingOffset
+        body.classList.add("lock")
+        console.log(paddingOffset)
+
     const closeButton = document.querySelector(".popup-close-button");
     closeButton.addEventListener("click", () => {
         popup.classList.remove("popup-open");
+        body.classList.remove("lock")
+
     });
+    popup.addEventListener("click", (event)=>{
+      if (!event.target.closest(".popup-body")) {
+        popup.classList.remove("popup-open")
+        body.classList.remove("lock")
+      }
+    })
 }
