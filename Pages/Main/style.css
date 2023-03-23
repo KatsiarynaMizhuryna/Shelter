@@ -268,21 +268,25 @@ p {
         margin-bottom: 60px;
         margin-top: 60px;
      }
-     .card_Katrine, .card_Jennifer, .card_Woody  {
+     .slider-content {
+        display: flex;
+        /*transform: translateX(-200%);*/
+     }
+     .card {
         display: flex;
         flex-direction: column;
         background-color: var(--color-light-s);
         border-radius: 9px;
      }
-     .card_Katrine:hover, .card_Jennifer:hover, .card_Woody:hover {
+     .card:hover {
         background-color: var(--color-light-xl);
         cursor: pointer;
      }
-     .card_Katrine:hover button, .card_Jennifer:hover button, .card_Woody:hover button {
+     .card:hover button{
         cursor: pointer;
         background-color: var(--color-primary);
      }
-     .card_Jennifer {
+     .card:nth-child(2n) {
         margin-left: 90px;
         margin-right: 90px;
      }
@@ -296,6 +300,7 @@ p {
         align-items: center;
         padding: 20px 19px;
         margin: 192px 53px 192px 0px;
+        cursor: pointer;
     }
     .arrow_right_button {
         margin: 192px 0px 192px 53px;

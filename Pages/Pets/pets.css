@@ -177,6 +177,7 @@ body {
     width: 340px;
     height: 52px;
     margin: auto;
+    display: flex;
 }
 .paginator {
     font-weight: 400;
@@ -223,7 +224,7 @@ body {
 /*Pets end*/
 /*Footer start*/
 .footer {
-    max-height: 350px;
+    min-height: 350px;
     background-image: url(../../Assets/Images/main_page/footer-gradient-background.png);
     background-repeat: no-repeat;
     background-size: cover;

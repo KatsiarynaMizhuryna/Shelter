@@ -2,15 +2,15 @@ const popupButtons = document.querySelectorAll(".Our_pets_button");
 const body = document.querySelector("body");
 const popup = document.querySelector(".popup");
 
-let unlock = true;
 if (popupButtons.length > 0) {
-  for (let index = 0; index < popupButtons.length; index++) {
-    popupButtons[index].addEventListener("click", (event) => {
-      popup.classList.add("popup-open");
-      createPopup(event);
-    });
-  }
+    for (let index = 0; index < popupButtons.length; index++) {
+        popupButtons[index].addEventListener("click", (event) => {
+            popup.classList.add("popup-open");
+            createPopup(event);
+        });
+    }
 }
+
 function createPopup(e) {
     const petCard = e.target.closest("[id]");
     const petInfo = petsInfo.find(item => item.name === petCard.id);
@@ -38,18 +38,18 @@ function createPopup(e) {
     paddingOffset = window.innerWidth - body.offsetWidth + "px";
         body.style.paddingRight = paddingOffset
         body.classList.add("lock")
-        console.log(paddingOffset)
+        // console.log(paddingOffset)
 
     const closeButton = document.querySelector(".popup-close-button");
     closeButton.addEventListener("click", () => {
         popup.classList.remove("popup-open");
         body.classList.remove("lock")
-
     });
+
     popup.addEventListener("click", (event)=>{
-      if (!event.target.closest(".popup-body")) {
-        popup.classList.remove("popup-open")
-        body.classList.remove("lock")
-      }
+        if (!event.target.closest(".popup-body")) {
+            popup.classList.remove("popup-open")
+            body.classList.remove("lock")
+        }
     })
 }

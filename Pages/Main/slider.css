@@ -1,0 +1,9 @@
+/*@keyframes move-right {
+    from {left: -990px;}
+    to {left: -1980px;}
+  }
+  
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 5s;
+  }*/
