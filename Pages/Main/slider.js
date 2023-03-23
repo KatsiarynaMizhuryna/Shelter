@@ -42,5 +42,5 @@ function renderCards() {
 
     refreshCards();
 }
-
 renderCards();
+
