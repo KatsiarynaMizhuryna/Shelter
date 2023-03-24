@@ -218,19 +218,19 @@ p {
 
     /* start-screen-content end*/
     /* About start*/
-    .about {
-        background: var(--color-light-xl);
-        padding: 77px 40px 100px 40px ;
-        }
-    .wrapper_about {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 175px;
+.about {
+    background: var(--color-light-xl);
+    padding: 77px 40px 100px 40px ;
     }
-    .about_pets {
-        color: var(--color-dark-l);
+.wrapper_about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 175px;
     }
-    .about_content {
+.about_pets {
+    color: var(--color-dark-l);
+}
+.about_content {
         color: var(--color-dark-l);
         margin-top: 14px;
         margin-bottom: 14px;
@@ -270,7 +270,7 @@ p {
      }
      .slider-content {
         display: flex;
-        /*transform: translateX(-200%);*/
+        gap: 90px;
      }
      .card {
         display: flex;
@@ -285,10 +285,6 @@ p {
      .card:hover button{
         cursor: pointer;
         background-color: var(--color-primary);
-     }
-     .card:nth-child(2n) {
-        margin-left: 90px;
-        margin-right: 90px;
      }
     .arrow_left_button, .arrow_right_button {
         max-width: 52px;
@@ -637,17 +633,19 @@ p {
     .about_pets {
         padding: 0px 0px 0px 65px;
     }
-    .slider {
-
+    .arrow_right_button {
+        margin: 195px 0px 191px 12px;
+}
+.arrow_left_button {
+    margin: 195px 12px 191px 0px;
+}
+    .slider-content {
+        max-width: 580px;
+        gap: 40px;
+        overflow: hidden;
     }
     .card_Woody {
         display: none;
-    }
-    .card_Katrine {
-
-    }
-    .card_Jennifer {
-
     }
     .help__content {
         padding: 0px;
@@ -700,7 +698,6 @@ p {
     .footer-content {
         display: flex;
         flex-direction: column;
-        
     }
     .footer-info {
       column-gap: 61px;
@@ -713,7 +710,6 @@ p {
         align-self: center;
     }
 }
-   
 
 
 

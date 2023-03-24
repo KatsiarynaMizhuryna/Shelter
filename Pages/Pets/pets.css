@@ -202,12 +202,14 @@ body {
     color: var(--color-dark-3xl);
     padding: 13px 12px 15px 12px;
     margin-right: 17px;
+    cursor: pointer;
 }
 .inactive_one {
     border-color: var(--color-primary);
     color: var(--color-dark-3xl);
     padding: 12px 17px 11px 17px;
     margin-right: 14px;
+    cursor: pointer;
 }
 .active {
     background-color: var(--color-primary);
@@ -221,11 +223,13 @@ body {
     padding: 14px 17px 16px 17px;
     color: var(--color-dark-3xl);
     margin-right: 15px;
+    cursor: pointer;
 }
 .right_two {
     border-color: var(--color-primary);
     color: var(--color-dark-3xl);
     padding: 14px 12px 15px 12px;
+    cursor: pointer;
 }
 /*Pets end*/
 /*Footer start*/
