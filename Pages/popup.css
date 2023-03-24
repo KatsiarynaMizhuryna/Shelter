@@ -35,8 +35,8 @@
     display: flex;
 }
 .popup-image img {
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 9px;
 }
 .popup-text {
@@ -100,4 +100,43 @@
 }
 .lock {
     overflow: hidden;
+}
+@media ((max-width: 1279px) and (min-width: 768px)) {
+    .popup-body {
+        max-width: 682px;
+        height: 402px;
+}
+    .popup-content {
+        max-width: 630px;
+    }
+    .popup-text h5 {
+        font-size: 13px;
+}
+    .popup-image img {
+        max-width: 350px;
+        max-height: 350px;
+}
+    .popup-text {
+        margin: 0px;
+}
+    
+    .popup-text h3 {
+        margin: 12px 0px 0px 12px;
+}
+    .popup-text h4 {
+        margin: 8px 0px 0px 12px;
+}
+    .popup-text h5 {
+        margin: 21px 7px 19px 12px;
+        line-height: 110%;
+}
+    .popup-text ul {
+        padding-left: 26px;
+        gap: 7px;
+}
+    .popup-text li {
+        line-height: 111%;
+        letter-spacing: 0.06em;
+}
+
 }
