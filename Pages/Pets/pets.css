@@ -92,6 +92,7 @@ body {
     display: flex;
     margin-top: 13px;
     margin-bottom: 17px;
+    padding: 0px;
 }
 .navigation-link {
     margin-right: 36px;
@@ -337,6 +338,10 @@ body {
     background-image: url(../../Assets/Icons/icon-marker\ \(1\).svg);
     background-repeat: no-repeat;
 }
+.footer-puppy img {
+    vertical-align: bottom;
+    height: 100%;
+}
 /*Footer end*/
 @media ((max-width: 1279px) and (min-width: 768px)) {
     .logo {
@@ -384,6 +389,81 @@ body {
     }
     .footer-puppy {
         text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    .wrapper {
+        padding: 0px 10px;
+    }
+    .logo {
+        margin-left: 2px;
+    }
+    .header_wrapper {
+        padding-right: 52px;
+    }
+    .pets {
+        padding: 42px 0px 43px 0px;
+    }
+    .pets-heading h3 {
+        font-size: 25px;
+        margin-bottom: 42px;
+}
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 270px;
+        max-height: 1365px;
+        overflow: hidden;
+        margin: 0px 15px 39px 15px;
+    }
+    .button_paginator {
+        margin: 0px 10px 0px 10px;
+        gap: 10px;
+    }
+    .footer {
+        padding: 0px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 15px;
+    }
+    .contact-info h3 {
+        font-size: 25px;
+        text-align: center;
+        max-height: 64px;
+    }
+    .contacts {
+        margin-bottom: 0px;
+    }
+    .contacts h3 {
+        margin: 0px 9px;
+    }
+    .mail {
+        margin: 0px 24px 0px 25px;
+}
+    .phone {
+        margin: 0px 30px 0px 31px;
+    }
+    .locations {
+        padding-top: 0px;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    .locations h3 {
+        margin: 0px 15px;
+    }
+    .footer-puppy {
+        min-height: 269px;
+        margin: 0px 20px 0px 20px;
+    }
+    .footer-puppy img {
+        max-width: 260px;
     }
 }
 
