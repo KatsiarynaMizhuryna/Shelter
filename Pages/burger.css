@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media (max-width: 767px) {
     body.lock {
         overflow: hidden;
     }
@@ -44,15 +44,21 @@
         position: fixed;
         top: 0;
         right:-100%;
-        width: 100%;
+        width: 320px;
         height: 100%;
         background: var(--color-dark-3xl);
         padding: 162px 38px 0px 39px;
         transition: right 0.5s ease 0s;
         overflow: auto;
     }
+    .vis {
+        top: 31px;
+        left: 10px;
+        position: absolute;
+    }
     .active-burger {
         right: 0;
+        /*left: calc(100vw - 320px);*/
     }
     .burger-menu.active-burger {
         transform: rotate(90deg);
@@ -84,7 +90,16 @@
     .navigation-link a {
         color: var(--color-light-s);
     }
-    .logo {
-        z-index: 5;
+    .blackout-active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(41, 41, 41, 0.6);
     }
+    /*.logo {
+        z-index: 5;
+    }*/
 }

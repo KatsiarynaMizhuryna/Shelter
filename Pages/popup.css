@@ -137,5 +137,41 @@
         line-height: 111%;
         letter-spacing: 0.06em;
 }
+}
+@media (max-width: 767px) {
+    .popup-image {
+        display: none;
+    }
+    .popup-body {
+        max-width: 270px;
+        max-height: 393px;
+}
+.popup-content {
+    max-width: 240px;
+    padding: 10px;
+}
+.popup-text {
+    margin: 0px;
+    text-align: center;
+    overflow-y: auto;
+}
+.popup-text h3 {
+    margin: 0px 0px 10px 0px;
+}
+.popup-text h4 {
+    margin: 0px 0px 20px 0px;
+}
+.popup-text h5 {
+    text-align: justify;
+    margin: 0px 0px 24px 0px;
+    font-size: 13px;
+    line-height: 110%;
+}
+.popup-text ul {
+    gap: 5px;
+}
+
 
 }
+
+

@@ -391,13 +391,12 @@ body {
         text-align: center;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
     .wrapper {
         padding: 0px 10px;
     }
     .logo {
         margin-left: 2px;
-        
     }
     .header_wrapper {
         padding-right: 52px;
