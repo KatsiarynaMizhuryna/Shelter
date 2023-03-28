@@ -88,6 +88,9 @@ body {
     display: flex;
     justify-content: center;
 }
+.burger-menu_blackout { 
+    display: none;
+}
 .nav__menu {
     display: flex;
     margin-top: 13px;

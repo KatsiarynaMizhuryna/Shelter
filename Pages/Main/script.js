@@ -15,18 +15,16 @@ e.preventDefault()
     })
 });
 
-const logo = document.querySelector(".logo")
-const logo2 = logo.cloneNode(true)
-console.log(logo2)
-
  /* ----------------------burger for main page--------------------------- */
 const burgerMenu = document.querySelector(".burger-menu")
 const navigation = document.querySelector(".navigation")
 const blackout = document.querySelector(".burger-menu_blackout")
+const logo = document.querySelector(".logo")
+const logo2 = logo.cloneNode(true)
 
 burgerMenu.addEventListener("click", ()=>{
     navigation.appendChild(logo2)
-    logo2.classList.add("vis")
+    logo2.classList.add("visible")
     document.body.classList.toggle("lock")
     burgerMenu.classList.toggle("active-burger")
     navigation.classList.toggle("active-burger")

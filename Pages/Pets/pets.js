@@ -18,15 +18,21 @@ e.preventDefault()
 /* ----------------------burger menu for pets page--------------------------- */
 const burgerMenu = document.querySelector(".burger-menu")
 const navigation = document.querySelector(".navigation")
-const logoTitle = document.querySelector(".logo_h1")
-const logoSubtitle = document.querySelector(".logo_p")
+const blackout = document.querySelector(".burger-menu_blackout")
+const logo = document.querySelector(".logo")
+const logo2 = logo.cloneNode(true)
+const logoTitle = logo2.querySelector("h1")
+const logoSubtitle = logo2.querySelector("p")
 
 burgerMenu.addEventListener("click", ()=>{
+    navigation.appendChild(logo2)
+    logo2.classList.add("visible")
     document.body.classList.toggle("lock")
     burgerMenu.classList.toggle("active-burger")
     navigation.classList.toggle("active-burger")
     logoTitle.classList.toggle("mobile-h1")
     logoSubtitle.classList.toggle("mobile-p")
+    blackout.classList.toggle("blackout-active")
 })
 
 menuLinks.forEach(menuLink => {
@@ -37,6 +43,7 @@ if (burgerMenu.classList.contains("active-burger")) {
     navigation.classList.remove("active-burger")
     logoTitle.classList.remove("mobile-h1")
     logoSubtitle.classList.remove("mobile-p")
+    blackout.classList.remove("blackout-active")
 }
     })
 });
