@@ -26,17 +26,31 @@ const logoSubtitle = logo2.querySelector("p")
 
 burgerMenu.addEventListener("click", ()=>{
     navigation.appendChild(logo2)
-    logo2.classList.add("visible")
+    logo2.classList.toggle("visible")
     document.body.classList.toggle("lock")
     burgerMenu.classList.toggle("active-burger")
     navigation.classList.toggle("active-burger")
     logoTitle.classList.toggle("mobile-h1")
     logoSubtitle.classList.toggle("mobile-p")
     blackout.classList.toggle("blackout-active")
+    if (!burgerMenu.classList.contains("active-burger")) {
+        navigation.removeChild(logo2)
+    }
 })
 
+blackout.addEventListener("click", () => {
+    if (blackout.classList.contains("blackout-active")) {
+        document.body.classList.remove("lock")
+        burgerMenu.classList.remove("active-burger")
+        navigation.classList.remove("active-burger")
+        blackout.classList.remove("blackout-active")
+        navigation.removeChild(logo2)
+    }
+    })
+
+
 menuLinks.forEach(menuLink => {
-    menuLink.addEventListener("click", (e)=> {
+    menuLink.addEventListener("click", ( )=> {
 if (burgerMenu.classList.contains("active-burger")) {
     document.body.classList.remove("lock")
     burgerMenu.classList.remove("active-burger")
@@ -44,6 +58,8 @@ if (burgerMenu.classList.contains("active-burger")) {
     logoTitle.classList.remove("mobile-h1")
     logoSubtitle.classList.remove("mobile-p")
     blackout.classList.remove("blackout-active")
+    logo2.classList.remove("visible")
+    navigation.removeChild(logo2)
 }
     })
 });

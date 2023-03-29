@@ -29,7 +29,21 @@ burgerMenu.addEventListener("click", ()=>{
     burgerMenu.classList.toggle("active-burger")
     navigation.classList.toggle("active-burger")
     blackout.classList.toggle("blackout-active")
+    if (!burgerMenu.classList.contains("active-burger")) {
+        navigation.removeChild(logo2)
+    }
 })
+blackout.addEventListener("click", () => {
+    if (blackout.classList.contains("blackout-active")) {
+        document.body.classList.remove("lock")
+        burgerMenu.classList.remove("active-burger")
+        navigation.classList.remove("active-burger")
+        blackout.classList.remove("blackout-active")
+        navigation.removeChild(logo2)
+    }
+    })
+
+
 
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", (e)=> {
