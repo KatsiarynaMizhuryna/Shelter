@@ -1,2 +1,1 @@
-# Shelter
-link: https://katsiarynamizhuryna.github.io/Shelter/
+https://katsiarynamizhuryna.github.io/Shelter/Pages/Main/index.html
