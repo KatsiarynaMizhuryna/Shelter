@@ -32,7 +32,7 @@ function createPopup(e) {
             </ul>
         </div>
         </div>
-        <div class="popup-btn"><button class="popup-close-button"><img class = "vector" src="./Assets/Icons/Vector.png" alt=""></button></div>
+        <div class="popup-btn"><button class="popup-close-button"><span class = "vector">&times</span></button></div>
         </div>`
     ;
     paddingOffset = window.innerWidth - body.offsetWidth + "px";
