@@ -16,13 +16,19 @@
     opacity: 1;
     visibility: visible;
 }
+.popup-close:hover .popup-close-button {
+    background-color: var(--color-primary);
+}
+
 .popup-body {
     position: relative;
     max-width: 952px;
     height: 552px;
     display: flex;
+    cursor: default;
 
 }
+
 .popup-content {
     max-width: 900px;
     margin: 52px 0px 0px 0px;
@@ -30,6 +36,10 @@
     display: flex;
     justify-items: center;
     border-radius: 9px;
+}
+.popup-body:hover .popup-close-button {
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
 }
 .popup-image {
     display: flex;
@@ -90,9 +100,10 @@
     border-radius: 100px;
     background-color: transparent;
     padding: 4px 0px 0px 0px;
+    cursor: pointer;
 }
 .popup-close-button:hover {
-    background-color: var(--color-primary)
+    background-color: var(--color-primary) !important
 }
 .vector {
     width: 12px;

@@ -43,8 +43,6 @@ blackout.addEventListener("click", () => {
     }
     })
 
-
-
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", (e)=> {
         if (burgerMenu.classList.contains("active-burger")) {
