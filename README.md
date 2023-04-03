@@ -1,1 +1,1 @@
-https://katsiarynamizhuryna.github.io/Shelter/Pages/Main/
+https://katsiarynamizhuryna.github.io/Shelter/Pages/Main/index.html
