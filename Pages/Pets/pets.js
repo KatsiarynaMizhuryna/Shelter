@@ -1,5 +1,5 @@
 /* ----------------------navigation for pets page--------------------------- */
-const menuLinks = document.querySelectorAll(".header_link[data-goto]")
+const menuLinks = document.querySelectorAll(".header-link[data-goto]")
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", (e)=> {
 const menuLink = e.target;
