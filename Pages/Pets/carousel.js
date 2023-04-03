@@ -74,7 +74,7 @@ function createPagination (start,end) {
 
 
     rightArrow.addEventListener("click", () => {
-        window.scrollTo({top:0})
+        window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(++pageCounter.innerText)
         leftArrow.disabled = false;
         doubleLeftArrow.disabled = false
@@ -87,7 +87,7 @@ function createPagination (start,end) {
         })
 
     leftArrow.addEventListener("click", () => {
-        window.scrollTo({top:0})
+        window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(--pageCounter.innerText)
         rightArrow.disabled = false
         doubleRightArrow.disabled = false
@@ -101,7 +101,7 @@ function createPagination (start,end) {
 
 
     doubleRightArrow.addEventListener("click", () => {
-        window.scrollTo({top:0})
+        window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(numberOfPages)
         rightArrow.disabled = true
         doubleRightArrow.disabled = true
@@ -112,7 +112,7 @@ function createPagination (start,end) {
     })
 
     doubleLeftArrow.addEventListener("click", () => {
-        window.scrollTo({top:0})
+        window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(1)
         leftArrow.disabled = true
         doubleLeftArrow.disabled = true
