@@ -1,22 +1,30 @@
 @font-face {
     font-family: 'Georgia bold';
-    src: url(/assets/Fonts/Georgia\ Bold\ Italic\ font.ttf);
+    /*src: url(/assets/Fonts/Georgia\ Bold\ Italic\ font.ttf);*/
+    src: local('')
+    url(../../Assets/Fonts/Georgia\ Bold\ Italic\ font.ttf);
     font-style:normal;
     font-weight: normal;
 }
 @font-face {
     font-family: "Georgia Regular";
-    src: url(/Assets/Fonts/Georgia\ Regular.ttf);
+    /*src: url(/Assets/Fonts/Georgia\ Regular.ttf);*/
+    src: local('')
+    url(../../Assets/Fonts/Georgia\ Regular.ttf);
     font-style: normal;
     font-weight: 400;
     }
 
 @font-face {
     font-family: 'Arial';
-    src: url(/assets/Fonts/Arial-BoldMT.ttf);
+    /*src: url(/assets/Fonts/Arial-BoldMT.ttf);
     src: url(/assets/Fonts/Arial-ItalicMT.ttf);
     src: url(/assets/Fonts/ArialMT.ttf);
-    src: url(/assets/Fonts/ArialMT\ \(1\).ttf);
+    src: url(/assets/Fonts/ArialMT\ \(1\).ttf);*/
+    src: url(../../Assets/Fonts/Arial-BoldMT.ttf);
+    src: url(../../Assets/Fonts/Arial-ItalicMT.ttf);
+    src: url(../../Assets/Fonts/ArialMT.ttf);
+    src: url(../../Assets/Fonts/ArialMT\ \(1\).ttf);
 }
 :root {
     --color-light-xl:#FFFFFF;

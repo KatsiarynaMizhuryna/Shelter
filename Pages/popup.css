@@ -45,7 +45,7 @@
     display: flex;
 }
 .popup-image img {
-    max-width: 500px;
+    width: 500px;
     max-height: 500px;
     border-radius: 9px;
 }
