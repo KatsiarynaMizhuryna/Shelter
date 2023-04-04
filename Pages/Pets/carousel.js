@@ -32,30 +32,30 @@ function renderCards() {
             petCards[i - (pageNumber - 1) * numberOfCards].firstElementChild.setAttribute('alt', petsInfo[rndIdsGrouped[i]].name)
             petCards[i - (pageNumber - 1) * numberOfCards].querySelector('.pets_name').textContent = petsInfo[rndIdsGrouped[i]].name
              }
-
-        // ****************************** debug
-        let pets = '';
-        for (let pet of petCards) {
-            pets += pet.id + ',';
-        }
-        console.log(pets)
-        console.log(rndIdsGrouped);
-        //console.log(pageNumber)
-        //console.log(numberOfCards);
-         // debug
-        // ******************************* debug
     }
 
     function refreshCards() {
-        randomIds = new Set();
-        while (rndIdsGrouped.length < numberOfCards * numberOfPages) {
-            petIndex = Math.floor(Math.random() * petsInfo.length);
-            randomIds.add(petIndex);
-            if (randomIds.size % numberOfCards === 0) {
-                rndIdsGrouped.push(...randomIds);
-                randomIds = new Set();
+        while (rndIdsGrouped.length != 48) {
+            let first = shuffleArray();
+            let second = shuffleArray();
+            let third = shuffleArray();
+            let part1 = second.slice(0, 4);
+            let part2 = second.slice(4,8);
+            if(!part1.includes(first[6]) && !part1.includes(first[7]) && !part2.includes(third[0]) && !part2.includes(third[1])) {
+                rndIdsGrouped = rndIdsGrouped.concat(first, second, third);
             }
         }
+        return rndIdsGrouped;
+    }
+    function shuffleArray() {
+        let arr = [];
+        while (arr.length !=petsInfo.length) {
+            let petIndex = Math.floor(Math.random() * (petsInfo.length))
+            if (arr.indexOf(petIndex) == -1) {
+                arr.push(petIndex);
+            }
+        }
+        return arr;
     }
 
     refreshCards();
@@ -74,7 +74,7 @@ function createPagination (start,end) {
 
 
     rightArrow.addEventListener("click", () => {
-        window.scrollTo({top:0, behavior: 'smooth'})
+        //window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(++pageCounter.innerText)
         leftArrow.disabled = false;
         doubleLeftArrow.disabled = false
@@ -87,7 +87,7 @@ function createPagination (start,end) {
         })
 
     leftArrow.addEventListener("click", () => {
-        window.scrollTo({top:0, behavior: 'smooth'})
+        //window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(--pageCounter.innerText)
         rightArrow.disabled = false
         doubleRightArrow.disabled = false
@@ -101,7 +101,7 @@ function createPagination (start,end) {
 
 
     doubleRightArrow.addEventListener("click", () => {
-        window.scrollTo({top:0, behavior: 'smooth'})
+        //window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(numberOfPages)
         rightArrow.disabled = true
         doubleRightArrow.disabled = true
@@ -112,7 +112,7 @@ function createPagination (start,end) {
     })
 
     doubleLeftArrow.addEventListener("click", () => {
-        window.scrollTo({top:0, behavior: 'smooth'})
+        //window.scrollTo({top:0, behavior: 'smooth'})
         pageCounter.innerText = parseInt(1)
         leftArrow.disabled = true
         doubleLeftArrow.disabled = true
